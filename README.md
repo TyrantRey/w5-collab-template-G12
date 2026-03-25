@@ -164,11 +164,11 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 | 組員姓名 | 負責分支         | 主要修改內容                                              | PR 連結 | 是否完成 |
 | -------- | ---------------- | --------------------------------------------------------- | ------- | -------- |
-| 張紹謙   | feature/member-e | 修改標題 & header 顏色、review 所有 PR 新增鍵盤快捷鍵說明 |         | ✅        |
-| 龎靚伊   | feature/member-a | 新增訊息時間戳                                            |         | ✅        |
-| 劉嘉鎔   | feature/member-b | 新增清除對話按鈕                                          |         | ✅        |
-| 邱家悅   | feature/member-c | 新增字數統計                                              |         | ✅        |
-| 何平     | feature/member-d | 新增深色模式                                              |         | ✅        |
+| 張紹謙   | feature/member-e | 修改標題 & header 顏色、review 所有 PR 新增鍵盤快捷鍵說明 |  https://github.com/TyrantRey/w5-collab-template-G12/pull/4       | ✅        |
+| 龎靚伊   | feature/member-a | 新增訊息時間戳                                            |  https://github.com/TyrantRey/w5-collab-template-G12/pull/1       | ✅        |
+| 劉嘉鎔   | feature/member-b | 新增清除對話按鈕                                          |  https://github.com/TyrantRey/w5-collab-template-G12/pull/2       | ✅        |
+| 邱家悅   | feature/member-c | 新增字數統計                                              |    https://github.com/TyrantRey/w5-collab-template-G12/pull/5     | ✅        |
+| 何平     | feature/member-d | 新增深色模式                                              | https://github.com/TyrantRey/w5-collab-template-G12/pull/3        | ✅        |
 
 
 ---
@@ -245,10 +245,10 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 | 評分項目            | 分數（1–5） | 說明 |
 | ------------------- | ----------- | ---- |
-| PR 描述完整度       | 5           |      |
-| Review comment 品質 | 5           |      |
-| 回應 review 的態度  | 5           |      |
-| 最終成果完整度      | 5           |      |
+| PR 描述完整度       | 5           |   Good   |
+| Review comment 品質 | 5           |  Good    |
+| 回應 review 的態度  | 5           |  Good    |
+| 最終成果完整度      | 5           |  Good    |
 
 這週覺得最有挑戰的是？
 
