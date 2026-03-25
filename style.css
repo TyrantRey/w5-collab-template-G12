@@ -135,7 +135,57 @@ header .subtitle {
   opacity: 0.85;
 }
 
-/* ── 組員 D 任務：在這裡加 body.dark 深色模式樣式 ── */
+/* ── 組員 D：深色模式切換按鈕 ── */
+#dark-mode-toggle {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+header { position: relative; }
+
+/* ── 組員 D：body.dark 深色模式樣式 ── */
+body.dark {
+  background-color: #1a1a2e;
+}
+body.dark .container {
+  background: #16213e;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+body.dark header {
+  background: #0f3460;
+}
+body.dark #chat-box {
+  background: #16213e;
+}
+body.dark .message.bot {
+  background: #1a1a2e;
+  color: #e0e0e0;
+}
+body.dark .message.user {
+  background: #e94560;
+}
+body.dark .input-area {
+  border-top-color: #2a2a4a;
+}
+body.dark .input-area input {
+  background: #1a1a2e;
+  border-color: #2a2a4a;
+  color: #e0e0e0;
+}
+body.dark .input-area input::placeholder {
+  color: #888;
+}
+body.dark .input-area button {
+  background: #e94560;
+}
+body.dark footer {
+  border-top-color: #2a2a4a;
+  color: #666;
+}
 
 /* ── 組員 E 任務：在這裡加 footer 樣式 ── */
 footer {
