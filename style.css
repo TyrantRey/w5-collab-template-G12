@@ -1,6 +1,10 @@
 /* W5 PR 協作練習樣式 */
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: sans-serif;
@@ -14,7 +18,7 @@ body {
 .container {
   background: white;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   width: 480px;
   max-width: 95vw;
   overflow: hidden;
@@ -25,11 +29,29 @@ body {
    ──────────────────────────────────── */
 header {
   background: #4f8ef7;
-  color: rgb(130, 129, 129);
+  color: white;
   padding: 20px 24px;
 }
-header h1 { font-size: 20px; }
-header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
+
+header h1 {
+  font-size: 20px;
+}
+
+header .subtitle {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+/* ── 組員 C 任務：字數統計樣式 ── */
+.char-count {
+  font-size: 12px;
+  color: #555;
+  padding: 6px 24px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #eee;
+  text-align: right;
+}
 
 #chat-box {
   height: 360px;
@@ -55,6 +77,14 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
 }
 
 /* ── 組員 A 任務：在這裡加 .timestamp 樣式 ── */
+.timestamp {
+  display: block;
+  font-size: 10px;
+  text-align: right;
+  opacity: 0.55;
+  margin-top: 4px;
+}
+
 .message.user {
   background: #4f8ef7;
   color: white;
@@ -77,9 +107,20 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
   outline: none;
 }
 
-.input-area input:focus { border-color: #4f8ef7; }
+.input-area input:focus {
+  border-color: #4f8ef7;
+}
 
 /* ── 組員 B 任務：在這裡加清除按鈕樣式 ── */
+.input-area .clear-btn {
+  background: #ff4d4f;
+  /* 紅色系 */
+}
+
+.input-area .clear-btn:hover {
+  background: #d9363e;
+}
+
 .input-area button {
   background: #4f8ef7;
   color: white;
@@ -90,9 +131,61 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
   font-size: 14px;
 }
 
-.input-area button:hover { opacity: 0.85; }
+.input-area button:hover {
+  opacity: 0.85;
+}
 
-/* ── 組員 D 任務：在這裡加 body.dark 深色模式樣式 ── */
+/* ── 組員 D：深色模式切換按鈕 ── */
+#dark-mode-toggle {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+header { position: relative; }
+
+/* ── 組員 D：body.dark 深色模式樣式 ── */
+body.dark {
+  background-color: #1a1a2e;
+}
+body.dark .container {
+  background: #16213e;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+body.dark header {
+  background: #0f3460;
+}
+body.dark #chat-box {
+  background: #16213e;
+}
+body.dark .message.bot {
+  background: #1a1a2e;
+  color: #e0e0e0;
+}
+body.dark .message.user {
+  background: #e94560;
+}
+body.dark .input-area {
+  border-top-color: #2a2a4a;
+}
+body.dark .input-area input {
+  background: #1a1a2e;
+  border-color: #2a2a4a;
+  color: #e0e0e0;
+}
+body.dark .input-area input::placeholder {
+  color: #888;
+}
+body.dark .input-area button {
+  background: #e94560;
+}
+body.dark footer {
+  border-top-color: #2a2a4a;
+  color: #666;
+}
 
 /* ── 組員 E 任務：在這裡加 footer 樣式 ── */
 .footer {
