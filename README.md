@@ -11,7 +11,7 @@
 | ----------- | -------------- |
 | 組別        | 第 12 組       |
 | 組員        |張紹謙 龎靚伊 劉嘉鎔 邱家悅 何平|
-| GitHub Repo |[](https://github.com/TyrantRey/w5-collab-template-G12)|
+| GitHub Repo | https://github.com/TyrantRey/w5-collab-template-G12 |
 | 報告日期    | 2025 / 3 / 25 |
 
 ---
