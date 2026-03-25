@@ -12,14 +12,14 @@
   <div class="container">
     <header>
       <!-- 組長任務：把標題改成你們組的名字 -->
-      <h1>🤖 第 12 組的 Chatbot</h1>
+      <h1>🤖 第 X 組的 Chatbot</h1>
       <p class="subtitle">W5 PR 協作練習</p>
     </header>
 
     <!-- 組員 A 任務：在 .message 裡加上時間戳 span -->
     <!-- 組員 C 任務：在 header 下方加字數統計 p 元素 -->
     <!-- 組員 D 任務：在 header 加深色模式切換按鈕 -->
-    <p id="word-count" class="word-count">已輸入 0 字</p>
+
     <div id="chat-box">
       <div class="message bot">
         嗨！這是我們組用 PR 協作做出來的 Chatbot 🎉
@@ -30,6 +30,7 @@
       <input id="user-input" type="text" placeholder="輸入訊息...">
       <button onclick="sendMessage()">送出</button>
       <!-- 組員 B 任務：在這裡加清除按鈕 -->
+      <button class="clear-btn" onclick="clearChat()">清除</button>
     </div>
 
     <!-- 組員 E 任務：在這裡加鍵盤快捷鍵說明 -->
@@ -62,10 +63,10 @@
     document.getElementById('user-input').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') sendMessage();
     });
-    document.getElementById('user-input').addEventListener('input', function (e) {
-      const count = e.target.value.length;
-      document.getElementById('word-count').textContent = `已輸入 ${count} 字`;
-    });
+    function clearChat() {
+      const chatBox = document.getElementById('chat-box');
+      chatBox.innerHTML = ''; // 清空對話框內容
+    }
     // 組員 B 任務：在這裡加 clearChat() 函數
     // 組員 C 任務：在這裡加字數統計更新邏輯
     // 組員 D 任務：在這裡加深色模式切換函數
