@@ -162,13 +162,14 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 ## 一、協作分工
 
-| 組員姓名 | 負責分支 | 主要修改內容 | PR 連結 | 是否完成 |
-| -------- | -------- | ------------ | ------- | -------- |
-|          |          |              |         | ✅ / ❌    |
-|          |          |              |         | ✅ / ❌    |
-|          |          |              |         | ✅ / ❌    |
-|          |          |              |         | ✅ / ❌    |
-|          |          |              |         | ✅ / ❌    |
+| 組員姓名 | 負責分支         | 主要修改內容                                              | PR 連結 | 是否完成 |
+| -------- | ---------------- | --------------------------------------------------------- | ------- | -------- |
+| 張紹謙   | feature/member-e | 修改標題 & header 顏色、review 所有 PR 新增鍵盤快捷鍵說明 |         | ✅        |
+| 龎靚伊   | feature/member-a | 新增訊息時間戳                                            |         | ✅        |
+| 劉嘉鎔   | feature/member-b | 新增清除對話按鈕                                          |         | ✅        |
+| 邱家悅   | feature/member-c | 新增字數統計                                              |         | ✅        |
+| 何平     | feature/member-d | 新增深色模式                                              |         | ✅        |
+
 
 ---
 
@@ -178,7 +179,7 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 截圖：GitHub repo → Pull requests，顯示所有 PR 的狀態（open / merged）
 
-（貼上截圖）
+![Alt text](%7BEDCD1EC0-C6FD-463E-BD6D-E6AF1EE99821%7D.png)
 
 ---
 
@@ -186,7 +187,7 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 截圖：其中一個 PR 的描述頁面，顯示完整的「做了什麼 / 如何測試」內容
 
-（貼上截圖）
+![Alt text](%7B8456B55F-A08A-4068-A514-632C8ED1771F%7D.png)
 
 ---
 
@@ -194,7 +195,7 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 截圖：Files changed 頁面，顯示 inline comment 的留言
 
-（貼上截圖）
+![Alt text](%7B0C95B27B-1727-462C-83BF-A1C25F53B6B3%7D.png)
 
 ---
 
@@ -202,7 +203,7 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 截圖：某個 PR 頁面顯示「Merged」紫色標籤
 
-（貼上截圖）
+![Alt text](%7B2EF531A1-6AF7-4081-8209-D5204C7BE4B5%7D.png)
 
 ---
 
@@ -210,21 +211,21 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 截圖：用瀏覽器打開 `index.html`，顯示所有功能整合完成的畫面
 
-（貼上截圖）
+![Alt text](%7B66A264E8-F121-4C95-AD9E-8E513F35428C%7D.png)
 
 ---
 
 ## 三、遇到的問題與解決方式
 
-**問題 1：**
+**問題 1：function naming**
 
-解決方式：
+解決方式：ask chat chatgpt
 
 ---
 
-**問題 2：**
+**問題 2：clear text input when input box not focused**
 
-解決方式：
+解決方式：add event lisenter on input box but not documnet
 
 ---
 
@@ -244,14 +245,14 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 | 評分項目            | 分數（1–5） | 說明 |
 | ------------------- | ----------- | ---- |
-| PR 描述完整度       |             |      |
-| Review comment 品質 |             |      |
-| 回應 review 的態度  |             |      |
-| 最終成果完整度      |             |      |
+| PR 描述完整度       | 5           |      |
+| Review comment 品質 | 5           |      |
+| 回應 review 的態度  | 5           |      |
+| 最終成果完整度      | 5           |      |
 
 這週覺得最有挑戰的是？
 
-- [ ] 寫 PR 描述
+- [x] 寫 PR 描述
 - [ ] 給 Code Review
 - [ ] 回應 review 並修改
 - [ ] 解決 Merge Conflict
