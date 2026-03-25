@@ -37,6 +37,13 @@
   </div>
 
   <script>
+    function getTimestamp() {
+      const now = new Date();
+      const hh = String(now.getHours()).padStart(2, '0');
+      const mm = String(now.getMinutes()).padStart(2, '0');
+      return `${hh}:${mm}`;
+    }
+
     function sendMessage() {
       const input = document.getElementById('user-input');
       const chatBox = document.getElementById('chat-box');
@@ -46,13 +53,20 @@
 
       const userDiv = document.createElement('div');
       userDiv.className = 'message user';
-      // 組員 A 任務：在這裡加入時間戳
       userDiv.textContent = text;
+      const userTs = document.createElement('span');
+      userTs.className = 'timestamp';
+      userTs.textContent = getTimestamp();
+      userDiv.appendChild(userTs);
       chatBox.appendChild(userDiv);
 
       const botDiv = document.createElement('div');
       botDiv.className = 'message bot';
       botDiv.textContent = `你說了「${text}」！`;
+      const botTs = document.createElement('span');
+      botTs.className = 'timestamp';
+      botTs.textContent = getTimestamp();
+      botDiv.appendChild(botTs);
       chatBox.appendChild(botDiv);
 
       input.value = '';
