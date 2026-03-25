@@ -12,7 +12,7 @@
   <div class="container">
     <header>
       <!-- 組長任務：把標題改成你們組的名字 -->
-      <h1>🤖 第 12 組的 Chatbot</h1>
+      <h1>🤖 第 X 組的 Chatbot</h1>
       <p class="subtitle">W5 PR 協作練習</p>
     </header>
 
@@ -30,6 +30,7 @@
       <input id="user-input" type="text" placeholder="輸入訊息...">
       <button onclick="sendMessage()">送出</button>
       <!-- 組員 B 任務：在這裡加清除按鈕 -->
+      <button class="clear-btn" onclick="clearChat()">清除</button>
     </div>
 
     <!-- 組員 E 任務：在這裡加鍵盤快捷鍵說明 -->
@@ -76,7 +77,10 @@
     document.getElementById('user-input').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') sendMessage();
     });
-
+    function clearChat() {
+      const chatBox = document.getElementById('chat-box');
+      chatBox.innerHTML = ''; // 清空對話框內容
+    }
     // 組員 B 任務：在這裡加 clearChat() 函數
     // 組員 C 任務：在這裡加字數統計更新邏輯
     // 組員 D 任務：在這裡加深色模式切換函數
