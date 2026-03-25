@@ -33,7 +33,9 @@
     </div>
 
     <!-- 組員 E 任務：在這裡加鍵盤快捷鍵說明 -->
-    <footer></footer>
+    <footer class="footer">
+      <p>快捷鍵：Enter 送出 / Esc 清空</p>
+    </footer>
   </div>
 
   <script>
@@ -66,6 +68,22 @@
     // 組員 B 任務：在這裡加 clearChat() 函數
     // 組員 C 任務：在這裡加字數統計更新邏輯
     // 組員 D 任務：在這裡加深色模式切換函數
+
+
+    const inputBox = document.getElementById("user-input");
+
+    inputBox.addEventListener("keydown", (e) => {
+      // Esc 清空
+      if (e.key === "Escape") {
+        inputBox.value = "";
+      }
+
+      // Enter 送出（如果你有送出函式）
+      if (e.key === "Enter") {
+        console.log("送出內容：", inputBox.value);
+        sendMessage()
+      }
+    });
   </script>
 
 </body>
