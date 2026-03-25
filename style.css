@@ -188,10 +188,18 @@ body.dark footer {
 }
 
 /* ── 組員 E 任務：在這裡加 footer 樣式 ── */
-footer {
-  padding: 10px 24px;
-  font-size: 12px;
-  color: #aaa;
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
   text-align: center;
-  border-top: 1px solid #f0f0f0;
+  font-size: 14px;
+  color: #666;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+}
+
+.footer p {
+  margin: 0;
 }
