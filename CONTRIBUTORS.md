@@ -12,7 +12,7 @@
 | 組長   | 張紹謙     | `main`             | 修改標題 & header 顏色、review 所有 PR | ✔️  |
 | 組員 A | 龎靚伊 | `feature/member-a` | 新增訊息時間戳                         | ⬜    |
 | 組員 B | 劉嘉鎔 | `feature/member-b` | 新增清除對話按鈕                       | ⬜    |
-| 組員 C | 邱家悅） | `feature/member-c` | 新增字數統計                           | ⬜    |
+| 組員 C | 邱家悅 | `feature/member-c` | 新增字數統計                           | ⬜    |
 | 組員 D | 何平 | `feature/member-d` | 新增深色模式                           | ⬜    |
 | 組員 E | 張紹謙 | `feature/member-e` | 新增鍵盤快捷鍵說明                     | ⬜    |
 
