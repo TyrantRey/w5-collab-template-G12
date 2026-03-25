@@ -1,6 +1,10 @@
 /* W5 PR 協作練習樣式 */
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: sans-serif;
@@ -14,7 +18,7 @@ body {
 .container {
   background: white;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   width: 480px;
   max-width: 95vw;
   overflow: hidden;
@@ -28,8 +32,16 @@ header {
   color: white;
   padding: 20px 24px;
 }
-header h1 { font-size: 20px; }
-header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
+
+header h1 {
+  font-size: 20px;
+}
+
+header .subtitle {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-top: 4px;
+}
 
 #chat-box {
   height: 360px;
@@ -77,7 +89,9 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
   outline: none;
 }
 
-.input-area input:focus { border-color: #4f8ef7; }
+.input-area input:focus {
+  border-color: #4f8ef7;
+}
 
 /* ── 組員 B 任務：在這裡加清除按鈕樣式 ── */
 .input-area button {
@@ -90,7 +104,17 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
   font-size: 14px;
 }
 
-.input-area button:hover { opacity: 0.85; }
+.input-area button:hover {
+  opacity: 0.85;
+}
+
+/* ── 組員 C 任務：加上字數統計的樣式 ── */
+.word-count {
+  text-align: right;
+  font-size: 12px;
+  color: #666;
+  padding: 4px 24px 0;
+}
 
 /* ── 組員 D 任務：在這裡加 body.dark 深色模式樣式 ── */
 
